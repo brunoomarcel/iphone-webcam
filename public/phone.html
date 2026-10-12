@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Câmera do iPhone</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body class="camera-page">
+    <main class="camera-layout">
+      <video id="preview" autoplay playsinline muted></video>
+      <div class="topbar">
+        <div>
+          <p class="eyebrow">iPhone</p>
+          <h1>Câmera ativa</h1>
+        </div>
+        <span id="status" class="status">iniciando</span>
+      </div>
+      <div class="controls">
+        <button id="start" class="button primary" type="button">Iniciar câmera</button>
+        <button id="switch" class="button" type="button">Trocar câmera</button>
+        <button id="preview-rotate" class="button" type="button">Tela 180</button>
+        <label>
+          Orientação no OBS
+          <select id="obs-orientation">
+            <option value="0" selected>Normal</option>
+            <option value="90">Paisagem</option>
+            <option value="-90">Paisagem invertida</option>
+            <option value="180">De cabeça para baixo</option>
+          </select>
+        </label>
+        <label>
+          Qualidade
+          <select id="quality">
+            <option value="720">720p</option>
+            <option value="1080" selected>1080p</option>
+            <option value="4k">4K</option>
+          </select>
+        </label>
+      </div>
+    </main>
+    <script src="/phone.js" type="module"></script>
+  </body>
+</html>

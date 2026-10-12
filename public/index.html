@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>iPhone Linux Webcam</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">Webcam local via WebRTC</p>
+        <h1>Use a câmera do iPhone no OBS Studio no Linux.</h1>
+        <p>
+          Abra a página do iPhone no Safari, autorize a câmera e capture a página
+          de recepção no OBS como fonte de navegador.
+        </p>
+      </section>
+
+      <section class="actions" aria-label="Links principais">
+        <button id="copy-phone" class="button primary" type="button">Copiar URL do iPhone</button>
+        <button id="copy-obs" class="button" type="button">Copiar URL do OBS</button>
+      </section>
+
+      <section class="panel">
+        <h2>URLs corretas</h2>
+        <div class="url-list">
+          <article>
+            <span>iPhone Safari</span>
+            <code id="phone-url">carregando...</code>
+          </article>
+          <article>
+            <span>OBS Browser Source</span>
+            <code id="obs-url">carregando...</code>
+          </article>
+        </div>
+        <p class="note">
+          Use <strong>localhost</strong> somente no computador. No iPhone, use o endereço com IP da rede Wi-Fi.
+        </p>
+      </section>
+    </main>
+    <script src="/index.js" type="module"></script>
+  </body>
+</html>

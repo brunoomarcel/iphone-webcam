@@ -1,0 +1,19 @@
+{
+  "name": "iphone-linux-webcam",
+  "version": "0.1.3",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "iphone-webcam": "./bin/iphone-webcam.mjs",
+    "iphone-webcam-app": "./bin/iphone-webcam-app.mjs"
+  },
+  "scripts": {
+    "start": "node server.mjs",
+    "build:deb": "node scripts/build-deb.mjs",
+    "install-local": "npm install -g .",
+    "install-desktop": "node scripts/install-desktop.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
